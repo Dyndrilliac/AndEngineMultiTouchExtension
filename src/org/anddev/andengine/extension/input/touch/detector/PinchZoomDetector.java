@@ -2,8 +2,8 @@ package org.anddev.andengine.extension.input.touch.detector;
 
 import org.anddev.andengine.extension.input.touch.controller.MultiTouch;
 import org.anddev.andengine.extension.input.touch.exception.MultiTouchException;
-import org.anddev.andengine.input.touch.TouchEvent;
-import org.anddev.andengine.input.touch.detector.BaseDetector;
+import org.andengine.input.touch.TouchEvent;
+import org.andengine.input.touch.detector.BaseDetector;
 
 import android.util.FloatMath;
 import android.view.MotionEvent;
@@ -124,5 +124,11 @@ public class PinchZoomDetector extends BaseDetector {
 		public void onPinchZoomStarted(final PinchZoomDetector pPinchZoomDetector, final TouchEvent pSceneTouchEvent);
 		public void onPinchZoom(final PinchZoomDetector pPinchZoomDetector, final TouchEvent pTouchEvent, final float pZoomFactor);
 		public void onPinchZoomFinished(final PinchZoomDetector pPinchZoomDetector, final TouchEvent pTouchEvent, final float pZoomFactor);
+	}
+
+	@Override
+	public void reset() {
+		// TODO Auto-generated method stub
+		
 	}
 }
